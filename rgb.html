@@ -1,0 +1,141 @@
+<html>
+<head>
+<title> RGB to Hex Converter</title>
+<script src = 'rgb-converter.js'> </script>
+<style>
+body {
+background: lightblue;
+}
+ #head1 {
+text-align: center;
+}
+ #container-box {
+  border-radius: 25px;
+  margin: auto;
+  background: white;
+  width: 400px;
+  height: 415px;
+  padding: 10px;
+  border: 5px;
+ }
+  #head-text {
+    text-align: center;
+    
+  }
+  #red-text {
+    width: 100px;
+    color: red;
+  }
+  #r-box {
+    width: 70px;
+    height: 40px;
+    transform: translate(70px, -50px)
+  }
+  
+  #green-text {
+    width: 100px;
+    color: green;
+  }
+  #g-box {
+    width: 70px;
+    height: 40px;
+    transform: translate(70px, -50px)
+  }
+  #blue-text {
+    width: 70px;
+    color: blue;
+  }
+  #b-box {
+    width: 70px;
+    height: 40px;
+    transform: translate(70px, -50px)
+  }
+  #SUBMIT-FINAL {
+    width: 100px;
+    height:40px;
+    transform: translate(60px,30px)
+  }
+  #final-hex{
+    border-radius: 15px;
+    margin: auto;
+    border-color: black;
+    height:40px;
+    width: 150px;
+    transform: translate(40px,-155px)
+  }
+  #output-title{
+    transform: translate(230px,-250px)
+  }
+  #go-back{
+    width: 80px;
+    height: 20px;
+    border-radius: 25px;
+    transform: translate(300px,-140px)
+  }
+  #hex-answer {
+    font-size: 25px;
+    transform: translate(230px,-392px);
+  }
+  .wrong-text {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    
+  
+  }
+  #red-wrong{
+    color: red;
+    transform: translate(-90px,-330px);
+  }
+  #green-wrong{
+    color: green;
+    transform: translate(-90px,-250px);
+  }
+  #blue-wrong{
+    color: blue;
+    transform: translate(-90px,-170px);
+  }
+  h2[name=hidden] {
+    opacity: 0.0;
+  }
+  h2[name=show] {
+    opacity: 20.0;
+  }
+</style>
+<body>
+<h1 id = 'head1'> RGB to Hex </h1>
+<div class = 'box' id = 'container-box'> 
+<h1 id = 'head-text'>Converter</h1>
+<h2 id= 'red-text'>Red</h2><input placeholder='Enter' id ='r-box' type = 'text' maxlength = 3>  </input>
+  
+  
+<h2 id= 'green-text'>Green</h2><input placeholder= 'Enter' id = 'g-box' type = 'text' maxlength = 3> </input>
+ 
+ 
+  
+<h2 id= 'blue-text'>Blue</h2><input placeholder='Enter' id='b-box' type = 'text' maxlength = 3> </input>
+  
+  <button id='SUBMIT-FINAL'  onclick ='convert()'>Submit</button>
+  
+  <input disabled= 'disabled' id = 'final-hex' > </input>
+  <h2 id = 'output-title'> <b>Final Hex:</b></h2>
+  <h2 class = 'wrong-text'name = 'hidden'id = 'red-wrong'>Must be number between 0 and 255</h2>
+  <h2 class = 'wrong-text'name = 'hidden'id = 'green-wrong'>Must be number between 0 and 255</h2>
+  <h2 class = 'wrong-text'name = 'hidden'id = 'blue-wrong'>Must be number between 0 and 255</h2>
+  <form action = 'index.html'>
+    <button id = 'go-back'><-- back </button>
+  </form>
+  
+  <i>
+  <p id = 'hex-answer'>#FFFFFF</p>
+  </i>
+  
+</div>
+
+
+
+
+  
+</body>
+</head>  
+</html>

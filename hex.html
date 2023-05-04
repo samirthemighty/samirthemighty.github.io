@@ -1,0 +1,91 @@
+<html>
+<head>
+<script src = 'hex-converter.js'> </script>
+
+<style>
+  body {
+    background: lightblue;
+  }
+  #top-text{
+    text-align: center;
+  }
+  #container{
+  border-radius: 25px;
+  margin: auto;
+  background: white;
+  width: 400px;
+  height: 415px;
+  padding: 10px;
+  border: 5px;
+  }
+  #container-text{
+    font-size: 35px;
+    text-align: center;
+  }
+
+
+
+  #back-button{
+    margin: auto;
+    height: 20px;
+    width: 80px;
+    border-radius: 25px;
+    transform: translate(320px,44px)
+  }
+  #final-submit{
+    margin: auto;
+    height:45px;
+    width: 145px;
+    transform: translate(-80px,50px);
+  }
+  #enter-text{
+    color: lightblack;
+  }
+  .box-input{
+    height: 35px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+  #hex-input{
+    transform: translate(100px,-50px);
+  }
+  #final-text {
+    font-size: 40px;
+  }
+  #final-rgb {
+    transform: translate(100px,-80px);
+  }
+  #rgb-answer {
+    font-size: 25px;
+    transform: translate(110px,-165px);
+  }
+</style>
+  
+</head>
+
+<body>
+<h1 id = 'top-text'> Hex to RGB </h1>
+<div id ='container'>
+<h2 id = 'container-text'> Converter </h2>
+<h3 id = 'enter-text'> Enter Hex</h3>
+<input class = 'box-input' id = 'hex-input'> </input>
+  
+<h3 id = 'final-text'><i>RGB</i></h3>
+<input class = 'box-input' id = 'final-rgb' readonly = 'readonly'> 
+</input>
+
+
+<button id = 'final-submit' onclick = 'conversion()'>Convert </button>
+  
+ <form action = 'index.html'> 
+ <button id = 'back-button'><-- back </button> 
+ </form> 
+  <i>
+    <p id = 'rgb-answer'> (0,0,0)</p>
+  </i>
+</div>
+</body>
+
+
+</html>
